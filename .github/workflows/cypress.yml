@@ -30,7 +30,7 @@ jobs:
       - name: 🟢 Configuration Node.js (Front-End)
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: "22"
           cache: "npm"
           cache-dependency-path: Cypress-bank-front/package-lock.json
 
