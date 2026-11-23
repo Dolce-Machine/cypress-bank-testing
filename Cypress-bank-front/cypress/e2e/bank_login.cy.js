@@ -1,5 +1,3 @@
-/* global cy, describe, it, beforeEach */
-
 describe("Parcours Utilisateur : Authentification et Tableau de bord", () => {
   
   beforeEach(() => {
