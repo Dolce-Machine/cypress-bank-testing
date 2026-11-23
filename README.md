@@ -23,7 +23,7 @@ Projet_Bank_Cypress/
 │   ├── pom.xml
 │   └── src/main/java/com/cypressbank/
 │       └── CypressBankApplication.java  # Contrôleur REST, DTOs et règles métier
-├── Cypress-bank-front/                  # Application Cliente (React 18 / Vite) & Tests
+├── Cypress-bank-front/                  # Application Cliente (React 19 / Vite) & Tests
 │   ├── cypress/
 │   │   ├── e2e/
 │   │   │   └── bank_login.cy.js         # Suite de tests E2E Cypress
@@ -48,7 +48,7 @@ Projet_Bank_Cypress/
 |                                                                                   |
 |  +-----------------------------+               +-------------------------------+  |
 |  |      FRONT-END (Client)     |   HTTP/JSON   |       BACK-END (Serveur)      |  |
-|  |       React 18 + Vite       | ------------> |     Java 17 + Spring Boot 3   |  |
+|  |       React 19 + Vite       | ------------> |     Java 17 + Spring Boot 3   |  |
 |  |    http://localhost:5173    | <------------ |     http://localhost:8080     |  |
 |  +-----------------------------+   API REST    +-------------------------------+  |
 |                 ^                                              ^                  |

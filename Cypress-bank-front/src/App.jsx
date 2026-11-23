@@ -55,9 +55,18 @@ export default function App() {
   };
 
   useEffect(() => {
-    if (user) {
-      fetchDashboard();
-    }
+    if (!user) return;
+    fetch(`${API_URL}/dashboard`)
+      .then((res) => res.json())
+      .then((data) => {
+        setDashboard(data);
+        if (data.beneficiaries?.length > 0) {
+          setSelectedBeneficiaryId((prev) => prev || data.beneficiaries[0].id);
+        }
+      })
+      .catch(() => {
+        setNotification({ type: "error", message: "Impossible de joindre le serveur bancaire Spring Boot (port 8080)." });
+      });
   }, [user]);
 
   const handleLogin = async (e) => {
